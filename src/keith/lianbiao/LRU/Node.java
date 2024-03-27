@@ -13,4 +13,9 @@ public class Node {
         this.key = key;
         this.val = val;
     }
+
+    @Override
+    public String toString() {
+        return this.key + ":" + this.val;
+    }
 }

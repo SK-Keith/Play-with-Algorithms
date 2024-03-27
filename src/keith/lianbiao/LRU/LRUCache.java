@@ -46,4 +46,31 @@ public class LRUCache {
         int oldKey = deleteNode.key;
         map.remove(oldKey);
     }
+
+    public void put(int key, int value) {
+        if (map.containsKey(key)) {
+            map.remove(key);
+            deleteKey(key);
+            addRecently(key, value);
+        } else {
+            if (this.cap <= cache.getSize()) {
+                removeLeastRecently();
+            }
+            addRecently(key, value);
+        }
+    }
+
+    public Node get(int key) {
+        if (!map.containsKey(key)) {
+            return null;
+        }
+        Node node = map.get(key);
+        makeRecently(key);
+        return node;
+    }
+
+    @Override
+    public String toString() {
+        return cache.toString();
+    }
 }

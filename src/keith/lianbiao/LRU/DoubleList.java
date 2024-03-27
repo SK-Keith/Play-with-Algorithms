@@ -32,7 +32,7 @@ public class DoubleList {
     // 由于是双链表且给的是目标Node节点，时间O（1）
     public void remove(Node x) {
         x.prev.next = x.next;
-        x.next.next = x.prev;
+        x.next.prev = x.prev;
         size--;
     }
 
@@ -48,5 +48,16 @@ public class DoubleList {
 
     public int getSize() {
         return size;
+    }
+
+    @Override
+    public String toString() {
+        Node next = head.next;
+        StringBuilder sb = new StringBuilder();
+        while (next != null) {
+            sb.append("(").append(next.key).append(":").append(next.val).append(") -> ");
+            next = next.next;
+        }
+        return sb.toString();
     }
 }
