@@ -7,6 +7,7 @@ public class QuickSort {
     // 我们的算法类不允许产生任何实例
     private QuickSort(){}
 
+    // 2. 把整个数组分成两部分的过程
     // 对arr[l...r]部分进行partition操作
     // 返回p, 使得arr[l...p-1] < arr[p] ; arr[p+1...r] > arr[p]
     private static int partition(Comparable[] arr, int l, int r){
@@ -25,7 +26,7 @@ public class QuickSort {
         return j;
     }
 
-    // 递归使用快速排序,对arr[l...r]的范围进行排序
+    // 1. 递归使用快速排序,对arr[l...r]的范围进行排序
     private static void sort(Comparable[] arr, int l, int r){
 
         if( l >= r )

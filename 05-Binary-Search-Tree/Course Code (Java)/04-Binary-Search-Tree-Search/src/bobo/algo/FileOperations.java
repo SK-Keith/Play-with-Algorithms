@@ -24,6 +24,7 @@ public class FileOperations {
 
         try {
             File file = new File(filename);
+            System.out.println(file.getAbsolutePath());
             if( file.exists() ){
                 FileInputStream fis = new FileInputStream(file);
                 scanner = new Scanner(new BufferedInputStream(fis), "UTF-8");

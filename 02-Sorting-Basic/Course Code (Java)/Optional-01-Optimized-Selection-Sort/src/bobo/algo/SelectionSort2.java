@@ -8,7 +8,6 @@ public class SelectionSort2 {
     private SelectionSort2(){}
 
     public static void sort(Comparable[] arr){
-
         int left = 0, right = arr.length - 1;
         while(left < right){
             int minIndex = left;
@@ -41,7 +40,7 @@ public class SelectionSort2 {
     // 测试SelectionSort2
     public static void main(String[] args) {
 
-        int N = 20000;
+        int N = 10;
         Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 100000);
         SortTestHelper.testSort("bobo.algo.SelectionSort2", arr);
 

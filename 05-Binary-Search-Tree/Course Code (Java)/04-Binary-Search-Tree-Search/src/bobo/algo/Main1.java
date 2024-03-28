@@ -1,8 +1,8 @@
 package bobo.algo;
 
-import java.util.Vector;
+import java.util.*;
 
-public class Main {
+public class Main1 {
 
     // 测试二分搜索树和顺序查找表之间的性能差距
     // 二分搜索树的性能远远优于顺序查找表
@@ -21,14 +21,22 @@ public class Main {
             // 统计圣经中所有词的词频
             // 注: 这个词频统计法相对简陋, 没有考虑很多文本处理中的特殊问题
             // 在这里只做性能测试用
+
             BST<String, Integer> bst = new BST<String, Integer>();
+            Map<String, Integer> map = new HashMap<>();
             for (String word: words) {
                 Integer res = bst.search(word);
-                if (res == null)
-                    bst.insert(word, new Integer(1));
-                else
+                if (res == null) {
+                    bst.insert(word, 1);
+                    map.put(word, 1);
+                } else {
                     bst.insert(word, res + 1);
+                    Integer integer = map.get(word);
+                    map.put(word, integer + 1);
+                }
             }
+
+            map.keySet().forEach(k -> System.out.println(k + "\t" + map.get(k)));
 
             // 输出圣经中god一词出现的频率
             if( bst.contain("god") )
@@ -41,7 +49,7 @@ public class Main {
 
             System.out.println();
 
-
+            int i = 2/0;
             // 测试顺序查找表 SST
             startTime = System.currentTimeMillis();
 
