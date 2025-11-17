@@ -1,4 +1,6 @@
-package kgyy.com.keith.tree;
+package kgyy.com.keith.tree.inorder;
+
+import kgyy.com.keith.tree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
