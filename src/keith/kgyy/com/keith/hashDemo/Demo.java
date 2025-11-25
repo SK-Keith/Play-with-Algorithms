@@ -15,7 +15,7 @@ public class Demo {
         System.out.println("---------------TwoSum-------");
         int[] numbers = {2, 7, 11, 15, 18, 22};  // 已排序
         int target = 26;
-        TwoSum twoSum = new TwoSum();
+        TwoSum20251124 twoSum = new TwoSum20251124();
         int[] ints = twoSum.twoSum(numbers, target);
         for (int anInt : ints) {
             System.out.print(anInt + " ");
@@ -23,7 +23,7 @@ public class Demo {
         System.out.println();
         System.out.println("---------------GroupAnagrams-------");
         String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
-        GroupAnagrams groupAnagrams = new GroupAnagrams();
+        GroupAnagrams20251124 groupAnagrams = new GroupAnagrams20251124();
         List<List<String>> lists = groupAnagrams.groupAnagrams(strs);
         System.out.println("输入: " + Arrays.toString(strs));
         System.out.println("输出: " + lists);
@@ -31,7 +31,7 @@ public class Demo {
 
         System.out.println();
         System.out.println("---------------LongestConsecutive-------");
-        LongestConsecutive solution = new LongestConsecutive();
+        LongestConsecutive20251124 solution = new LongestConsecutive20251124();
 
         // 测试用例1：标准例子
         int[] nums1 = {100, 4, 200, 1, 3, 2};
@@ -69,7 +69,7 @@ public class Demo {
 
     }
 
-    public static void testCase(LongestConsecutive solution, int[] nums, int expected, String description) {
+    public static void testCase(LongestConsecutive20251124 solution, int[] nums, int expected, String description) {
         int result1 = solution.longestConsecutive(nums);
         int result2 = solution.longestConsecutive(nums);
 

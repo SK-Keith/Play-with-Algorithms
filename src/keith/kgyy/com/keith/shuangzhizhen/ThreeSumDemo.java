@@ -8,7 +8,7 @@ package kgyy.com.keith.shuangzhizhen;
  */
 public class ThreeSumDemo {
     public static void main(String[] args) {
-        ThreeSum solution = new ThreeSum();
+        ThreeSum202511252 solution = new ThreeSum202511252();
 
         int[] nums1 = {-1, 0, 1, 2, -1, -4};
         System.out.println(solution.threeSum(nums1));

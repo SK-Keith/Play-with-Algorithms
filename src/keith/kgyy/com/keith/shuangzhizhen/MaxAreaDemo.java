@@ -8,7 +8,7 @@ package kgyy.com.keith.shuangzhizhen;
  */
 public class MaxAreaDemo {
     public static void main(String[] args) {
-        MaxArea solution = new MaxArea();
+        MaxArea20251124 solution = new MaxArea20251124();
         int[] height1 = {1, 8, 6, 2, 5, 4, 8, 3, 7};
         System.out.println(solution.maxArea(height1)); // 输出: 49
 
