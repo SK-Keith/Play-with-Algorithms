@@ -6,7 +6,7 @@ package kgyy.com.keith.huadong;
  * @author yaomianxian
  * @date 2025/02/26 0026 14:24
  */
-public class Demo {
+public class EqualSubstringDemo {
 
     public static void main(String[] args) {
         EqualSubstring solution = new EqualSubstring();
