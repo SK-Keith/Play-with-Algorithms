@@ -1,8 +1,5 @@
 package tree;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
-
 /**
  * @author MX.Y
  * @DATE 2023-01-09 21:18

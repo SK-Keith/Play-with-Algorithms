@@ -46,6 +46,7 @@ public class Climb {
     private static Integer[] memo;
 
     public static int climb2(int n) {
+        // 260127 数据初始化容量n+1,写成n了
         memo = new Integer[n + 1];
         return climb2Memo(n);
     }
@@ -70,7 +71,7 @@ public class Climb {
         if (n <= 2) {
             return n;
         }
-
+        // 260127 数组初始化容量n+1，写成n了
         int[] dp = new int[n + 1];
         dp[0] = 1;
         dp[1] = 1;

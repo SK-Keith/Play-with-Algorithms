@@ -1,6 +1,6 @@
 package lianbiao;
 
-import com.google.common.collect.Lists;
+import java.util.Arrays;
 
 /**
  * @author MX.Y
@@ -8,8 +8,8 @@ import com.google.common.collect.Lists;
  */
 public class HeBing {
     public static void main(String[] args) {
-        ListNode node1 = NodeHelper.insert(Lists.newArrayList(1, 2, 4));
-        ListNode node2 = NodeHelper.insert(Lists.newArrayList(1, 3, 4));
+        ListNode node1 = NodeHelper.insert(Arrays.asList(1, 2, 4));
+        ListNode node2 = NodeHelper.insert(Arrays.asList(1, 3, 4));
         ListNode listNode = mergeTwoLists(node1, node2);
         NodeHelper.print(listNode);
     }

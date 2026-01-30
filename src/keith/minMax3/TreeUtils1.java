@@ -1,7 +1,5 @@
 package minMax3;
 
-import com.sun.deploy.util.StringUtils;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -61,7 +59,8 @@ public class TreeUtils1 {
                 valueSum += w[i];
                 indexs.add(Integer.toString(i));
             }
-            strs.append(changeNode.getMsg()).append("\t符合要求的物品序号为：").append(StringUtils.join(indexs, "->"))
+            // 修复：使用Java内置的String.join()方法替代StringUtils.join()
+            strs.append(changeNode.getMsg()).append("\t符合要求的物品序号为：").append(String.join("->", indexs))
                     .append("\t，展开分析总体积为：").append(volumnSum).append("，总重量为：").append(weightSum).append("，总价值为：").append(valueSum);
 //            System.out.print(changeNode.getMsg() + "\t符合要求的物品序号为：" + StringUtils.join(indexs, "->"));
 //            System.out.print("\t，展开分析总体积为：" + volumnSum + "，总重量为：" + weightSum + "，总价值为：" + valueSum);

@@ -1,6 +1,6 @@
 package lianbiao;
 
-import com.google.common.collect.Lists;
+import java.util.Arrays;
 
 /**
  * 双指针迭代、
@@ -11,7 +11,7 @@ import com.google.common.collect.Lists;
 public class ReverseList {
 
     public static void main(String[] args) {
-        ListNode head = NodeHelper.insert(Lists.newArrayList(1, 2, 3, 4));
+        ListNode head = NodeHelper.insert(Arrays.asList(1, 2, 3, 4));
         ListNode listNode = reverseList2(head);
         NodeHelper.print(listNode);
     }

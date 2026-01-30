@@ -1,6 +1,6 @@
 package minMax3;
 
-import com.sun.deploy.util.StringUtils;
+import com.google.common.base.Joiner;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +28,6 @@ public class Demo {
 
         list.forEach(System.out::print);
         System.out.println();
-        System.out.println(StringUtils.join(list, ","));
+        System.out.println(Joiner.on(",").join(list));
     }
 }

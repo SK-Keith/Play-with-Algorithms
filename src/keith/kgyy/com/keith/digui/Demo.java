@@ -18,13 +18,13 @@ public class Demo {
 
     public static void main(String[] args) {
         int n = 5; // 举例，楼梯的级数为 5,result:8
-        // 使用递归解法 Climb20250303  Climb20250115
-        System.out.println("Number of ways to climb " + n + " stairs: " + Climb20250303.climb(n));
+        // 使用递归解法 Climb20260127  Climb20250115
+        System.out.println("Number of ways to climb " + n + " stairs: " + Climb20260127.climb(n));
         // 递归优化，使用数组存储子问题的解，避免重复计算
-        System.out.println("Number of ways to climb " + n + " stairs: " + Climb20250303.climb2(n));
+        System.out.println("Number of ways to climb " + n + " stairs: " + Climb20260127.climb2(n));
         // 使用动态规划解法
-        System.out.println("Number of ways to climb " + n + " stairs: " + Climb20250303.climb3(n));
+        System.out.println("Number of ways to climb " + n + " stairs: " + Climb20260127.climb3(n));
         // 动态规划优化空间，省去计算过程的数组，直接返回结果
-        System.out.println("Number of ways to climb " + n + " stairs: " + Climb20250303.climb4(n));
+        System.out.println("Number of ways to climb " + n + " stairs: " + Climb20260127.climb4(n));
     }
 }

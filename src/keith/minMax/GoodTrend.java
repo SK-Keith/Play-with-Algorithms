@@ -1,7 +1,5 @@
 package minMax;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
-
 /**
  * @author MX.Y
  * @DATE 2021/11/23 23:10

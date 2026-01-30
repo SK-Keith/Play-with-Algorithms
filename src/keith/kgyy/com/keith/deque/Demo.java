@@ -12,7 +12,7 @@ public class Demo {
 
     public static void main(String[] args) {
         int[] nums = new int[]{73,74,75,71,69,72,76,73};
-        DailyTem20251112 dailyTemperatures = new DailyTem20251112();
+        DailyTem20260127 dailyTemperatures = new DailyTem20260127();
         int[] ints = dailyTemperatures.dailyTem(nums);
 //        int[] ints = Daily2.dailyTem(nums);
         for (int anInt : ints) {
