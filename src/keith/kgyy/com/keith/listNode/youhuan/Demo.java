@@ -32,16 +32,19 @@ public class Demo {
 
     /**
      * 测试方法
+     * 测试用例1 - 环的连接点值为: 2
+     * 测试用例2 - 环的连接点值为: 1
+     * 测试用例3 - 链表无环
      */
     public static void main(String[] args) {
-        Youhuan Youhuan = new Youhuan();
+        Youhuan260130 yh = new Youhuan260130();
 
         // 测试用例1：有环
         int[] values1 = {3, 2, 0, -4};
         int pos1 = 1; // 环的连接点在索引1（值为2的节点）
         ListNode head1 = createLinkedListWithCycle(values1, pos1);
 
-        ListNode entry1 = Youhuan.cycle(head1);
+        ListNode entry1 = yh.cycle(head1);
         if (entry1 != null) {
             System.out.println("测试用例1 - 环的连接点值为: " + entry1.val);
         } else {
@@ -53,7 +56,7 @@ public class Demo {
         int pos2 = 0; // 环的连接点在头节点
         ListNode head2 = createLinkedListWithCycle(values2, pos2);
 
-        ListNode entry2 = Youhuan.cycle(head2);
+        ListNode entry2 = yh.cycle(head2);
         if (entry2 != null) {
             System.out.println("测试用例2 - 环的连接点值为: " + entry2.val);
         } else {
@@ -65,7 +68,7 @@ public class Demo {
         int pos3 = -1; // 无环
         ListNode head3 = createLinkedListWithCycle(values3, pos3);
 
-        ListNode entry3 = Youhuan.cycle(head3);
+        ListNode entry3 = yh.cycle(head3);
         if (entry3 != null) {
             System.out.println("测试用例3 - 环的连接点值为: " + entry3.val);
         } else {
